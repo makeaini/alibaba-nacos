@@ -1,0 +1,15 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#       - id: article_route
+#         uri: http://172.16.3.117:8111
+#         predicates:
+#         - Path=/api/content/**
+spring:
+  application:
+    name: spring-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
